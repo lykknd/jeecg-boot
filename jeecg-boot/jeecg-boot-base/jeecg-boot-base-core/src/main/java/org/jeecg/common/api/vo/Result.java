@@ -72,7 +72,7 @@ public class Result<T> implements Serializable {
 
 	@Deprecated
 	public static Result<Object> ok() {
-		Result<Object> r = new Result<Object>();
+		Result<Object> r = new Result<>();
 		r.setSuccess(true);
 		r.setCode(CommonConstant.SC_OK_200);
 		return r;
